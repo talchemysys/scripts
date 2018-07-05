@@ -21,7 +21,7 @@ SFILE=/etc/puppet/manifests/site.pp
 
 HELP_TXT="
 This script edits the main puppet site.pp file:
-	$SFILE
+  $SFILE
 
 SYNTAX:
   # $PROG [OPTIONS]
@@ -93,9 +93,9 @@ f_vroot  # verify root execution
 
 if [ -f $SFILE ] ;then
   f_msg "Editing $SFILE"
-	f_run "$EDITOR $SFILE"
+  f_run "$EDITOR $SFILE"
 else
-	f_msg -e "File does not exist: $SFILE"
+  f_msg -e "File does not exist: $SFILE"
 fi
 
 #===============================================================================
