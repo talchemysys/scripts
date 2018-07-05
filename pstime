@@ -100,7 +100,7 @@ f_run "ps -eo pid,etime,cmd |grep -v '`which $PROG`' |grep -v 'grep $PROCESS' |g
 
 f_logro
 
-#...................
+#---------------------------------------
 # exit
 
 f_exit
