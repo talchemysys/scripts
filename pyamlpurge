@@ -102,7 +102,7 @@ f_run "find $DIR/ -type f -mtime +$DAYS -exec rm -f '{}' \; "
 
 f_logro
 
-#...................
+#---------------------------------------
 # exit
 
 f_exit
