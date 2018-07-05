@@ -90,9 +90,9 @@ f_msg -d "DRYRUN=$DRYRUN"
 
 f_msg "Checking if $PACKAGE is installed..."
 if [[ ( `apt-get --help 2> /dev/null` ) ]] ;then
-	f_run "dpkg --get-selections |grep -i $PACKAGE"
+  f_run "dpkg --get-selections |grep -i $PACKAGE"
 elif [[ ( `yum --help 2> /dev/null` ) ]] ;then
-	f_run "rpm -qa |grep -i $PACKAGE"
+  f_run "rpm -qa |grep -i $PACKAGE"
 fi
 
 #===============================================================================
