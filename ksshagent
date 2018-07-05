@@ -97,9 +97,9 @@ f_msg "Total 'ssh-agent -s' processes before: `cat $TMP |wc -l`"
 
 f_msg "creating ssh-agent pid list..."
 for PID in $(cat $TMP) ;do
-	f_msg "killing $PID..."
-	f_run "kill -3 $PID"
-	sleep .1
+  f_msg "killing $PID..."
+  f_run "kill -3 $PID"
+  sleep .1
 done
 
 #---------------------------------------

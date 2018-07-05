@@ -89,8 +89,7 @@ f_vroot  # verify root execution
 #---------------------------------------
 # 
 
-f_msg "printing free disk space..."
-f_run "df -h"
+f_msg "printing free disk space..." ;f_run "df -h"
 
 #===============================================================================
 # cleanup
